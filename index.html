@@ -24,7 +24,45 @@
         </div>
 
         <form id="checklistForm">
-            <!-- Adicione seus campos existentes aqui -->
+            <form id="checklistForm">
+
+            <label for="cpf">CPF:</label>
+            <input type="text" id="cpf" required>
+            
+            <label for="nome_motorista">Nome do Motorista:</label>
+            <input type="text" id="nome_motorista" required>
+
+            
+
+            <label for="rg">RG:</label>
+            <input type="text" id="rg" required>
+
+            <label for="telefone">Telefone:</label>
+            <input type="text" id="telefone" required>
+
+            <label for="transportadora">Transportadora:</label>
+            <input type="text" id="transportadora" required>
+
+            <label for="tipo_veiculo">Tipo de Veículo:</label>
+            <select id="tipo_veiculo" required>
+                <option value="carreta">Carreta</option>
+                <option value="truck">Truck</option>
+                <option value="bau">Bau</option>
+                <option value="toco">Toco</option>
+            </select>
+
+            <label for="tipo_veiculo_carga">Tipo de Veículo de Carga:</label>
+            <select id="tipo_veiculo_carga" required>
+                <option value="sider">Sider</option>
+                <option value="aberto">Aberto</option>
+                <option value="tanque">Tanque</option>
+            </select>
+
+            <label for="placa">Placa:</label>
+            <input type="text" id="placa" required>
+
+            <label for="placa_carreta">Placa da Carreta:</label>
+            <input type="text" id="placa_carreta" required>
 
             <button type="button" onclick="submitForm()">Enviar</button>
         </form>
