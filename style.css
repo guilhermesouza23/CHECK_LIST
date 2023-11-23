@@ -12,11 +12,11 @@ body {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px; /* Aumentei o valor de margin-bottom para 30px */
 }
 
 h1 {
     color: #333;
+    margin-bottom: 20px; /* Adicionado margin-bottom para o título */
 }
 
 p {
@@ -27,6 +27,7 @@ p {
 .header-options {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 20px; /* Adicionado margin-bottom para o bloco de opções de cabeçalho */
 }
 
 label {
