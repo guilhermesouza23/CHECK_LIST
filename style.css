@@ -15,11 +15,16 @@ img {
 
 .container {
     max-width: 600px;
-    margin: 0 auto;
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.half-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
 }
 
 h2 {
@@ -61,9 +66,10 @@ button:hover {
 
 /* Estilos para o novo contêiner da tabela de observações */
 .observation-container {
-    margin-top: 20px;
-    float: left;
-    width: calc(50% - 10px); /* 50% da largura, subtraindo a margem entre os contêineres */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .observation-table {
