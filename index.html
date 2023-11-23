@@ -7,67 +7,204 @@
     <title>214.ARM.FS.005 - Check List de Inspeção de Veículos</title>
 </head>
 <body>
-     
-     </div>
-    <div class="container"> 
+    <div class="container">
         <center>
             <div class="header-image">
-     <img src="https://drive.google.com/uc?id=1ZlNh9CXIojCuXoXB3dg8Xr07VlFacl3N" alt="Imagem de cabeçalho">
-        <h2>214.ARM.FS.005 - Check List de Inspeção de Veículos para Carregamento de Produto Terminado e Recebimento de Insumos</h2> 
-         </center>
+                <img src="https://drive.google.com/uc?id=1ZlNh9CXIojCuXoXB3dg8Xr07VlFacl3N" alt="Imagem de cabeçalho">
+                <h2>214.ARM.FS.005 - Check List de Inspeção de Veículos para Carregamento de Produto Terminado e Recebimento de Insumos</h2>
+            </div>
+        </center>
         <div class="header-options">
             <center>
-            <label for="data">Data:</label>
-            <input type="date" id="data" required>
-
-            <label for="horario">Horário Atual:</label>
-            <input type="text" id="horario" readonly>
+                <label for="data">Data:</label>
+                <input type="date" id="data" required>
+                <label for="horario">Horário Atual:</label>
+                <input type="text" id="horario" readonly>
             </center>
         </div>
 
         <form id="checklistForm">
-
-            <label for="cpf">CPF:</label>
-            <input type="text" id="cpf" required>
-            
-            <label for="nome_motorista">Nome do Motorista:</label>
-            <input type="text" id="nome_motorista" required>
-
-            
-
-            <label for="rg">RG:</label>
-            <input type="text" id="rg" required>
-
-            <label for="telefone">Telefone:</label>
-            <input type="text" id="telefone" required>
-
-            <label for="transportadora">Transportadora:</label>
-            <input type="text" id="transportadora" required>
-
-            <label for="tipo_veiculo">Tipo de Veículo:</label>
-            <select id="tipo_veiculo" required>
-                <option value="carreta">Carreta</option>
-                <option value="truck">Truck</option>
-                <option value="bau">Bau</option>
-                <option value="toco">Toco</option>
-            </select>
-
-            <label for="tipo_veiculo_carga">Tipo de Veículo de Carga:</label>
-            <select id="tipo_veiculo_carga" required>
-                <option value="sider">Sider</option>
-                <option value="aberto">Aberto</option>
-                <option value="tanque">Tanque</option>
-            </select>
-
-            <label for="placa">Placa:</label>
-            <input type="text" id="placa" required>
-
-            <label for="placa_carreta">Placa da Carreta:</label>
-            <input type="text" id="placa_carreta" required>
+            <!-- Adicione seus campos existentes aqui -->
 
             <button type="button" onclick="submitForm()">Enviar</button>
         </form>
     </div>
+
+    <!-- Novo contêiner para a tabela de observações -->
+    <div class="container observation-container">
+        <table class="observation-table">
+            <tr>
+                <th>Observação</th>
+                <th>Responsável</th>
+                <th>Sim</th>
+                <th>Não</th>
+                <th>N/A</th>
+            </tr>
+            <!-- Adicione as linhas da tabela com as observações -->
+            <tr>
+                <td>01- Motorista possui algumas das alternativas de identificação: N° carga, crachá ou uniforme da Portaria</td>
+                <td>Portaria</td>
+                <td><input type="checkbox" name="obs1_sim"></td>
+                <td><input type="checkbox" name="obs1_nao"></td>
+                <td><input type="checkbox" name="obs1_na"></td>
+            </tr>
+            <tr>
+                <td>02- A CNH do motorista está válida e a categoria corresponde ao veículo?</td>
+                <td>Portaria</td>
+                <td><input type="checkbox" name="obs2_sim"></td>
+                <td><input type="checkbox" name="obs2_nao"></td>
+                <td><input type="checkbox" name="obs2_na"></td>
+            </tr>
+            <tr>
+                <td>03- O CRLV (Certificado de Registro e Licenciamento de Veículos) está com licenciamento dentro do mês correspondente do licenciamento</td>
+                <td>Portaria</td>
+                <td><input type="checkbox" name="obs3_sim"></td>
+                <td><input type="checkbox" name="obs3_nao"></td>
+                <td><input type="checkbox" name="obs3_na"></td>
+            </tr>
+            <tr>
+                <td>04- Motorista possui calçado de segurança? (Não é permitida a entrada com chinelo, sandálias, tênis ou sapato comum)</td>
+                <td>Portaria</td>
+                <td><input type="checkbox" name="obs4_sim"></td>
+                <td><input type="checkbox" name="obs4_nao"></td>
+                <td><input type="checkbox" name="obs4_na"></td>
+            </tr>
+            <tr>
+                <td>05-Há extintor de incêndio (Existência, validade, carga, selo INMETRO?)</td>
+                <td>Portaria</td>
+                <td><input type="checkbox" name="obs5_sim"></td>
+                <td><input type="checkbox" name="obs5_nao"></td>
+                <td><input type="checkbox" name="obs5_na"></td>
+            </tr>
+            <tr>
+                <td>06- O veículo possui o adesivo RNTRC? (Registro Nacional de Transportadores Rodoviários de Carga) está válido?</td>
+                <td>Portaria</td>
+                <td><input type="checkbox" name="obs6_sim"></td>
+                <td><input type="checkbox" name="obs6_nao"></td>
+                <td><input type="checkbox" name="obs6_na"></td>
+            </tr>
+            <tr>
+                <td>07- O caminhão em bom estado de conservação externamente? (sem amassados, enferrujados, peças soltas e trincas no para-brisa)</td>
+                <td>Portaria</td>
+                <td><input type="checkbox" name="obs7_sim"></td>
+                <td><input type="checkbox" name="obs7_nao"></td>
+                <td><input type="checkbox" name="obs7_na"></td>
+            </tr>
+            <tr>
+                <td>08- O caminhão está sem vazamentos (óleo, etc.)?</td>
+                <td>Portaria</td>
+                <td><input type="checkbox" name="obs8_sim"></td>
+                <td><input type="checkbox" name="obs8_nao"></td>
+                <td><input type="checkbox" name="obs8_na"></td>
+            </tr>
+            <tr>
+                <td>09- A emissão de fumaça preta possui densidade colorimétrica menor ou igual ao Padrão 2 da escala Ringelmann?</td>
+                <td>Portaria</td>
+                <td><input type="checkbox" name="obs9_sim"></td>
+                <td><input type="checkbox" name="obs9_nao"></td>
+                <td><input type="checkbox" name="obs9_na"></td>
+            </tr>
+            <tr>
+                <td>10- Faróis, lanternas e setas estão em funcionamento e bem fixados?</td>
+                <td>Portaria</td>
+                <td><input type="checkbox" name="obs10_sim"></td>
+                <td><input type="checkbox" name="obs10_nao"></td>
+                <td><input type="checkbox" name="obs10_na"></td>
+            </tr>
+            <tr>
+                <td>11- O veículo possui sinal sonoro de ré? (Se não possuir, disponibilizar o sinal sonoro portátil da unidade)</td>
+                <td>Portaria</td>
+                <td><input type="checkbox" name="obs11_sim"></td>
+                <td><input type="checkbox" name="obs11_nao"></td>
+                <td><input type="checkbox" name="obs11_na"></td>
+            </tr>
+            <tr>
+                <td>12- Os pneus do veículo e estepe estão em bom estado de conservação? Consta no mínimo 1 estepe para cada tipo de roda?</td>
+                <td>Portaria</td>
+                <td><input type="checkbox" name="obs12_sim"></td>
+                <td><input type="checkbox" name="obs12_nao"></td>
+                <td><input type="checkbox" name="obs12_na"></td>
+            </tr>
+            <tr>
+                <td>13- Os veículos com peso bruto maior que 4.600 Kg possuem fita retro refletiva na lateral e no pára-choque traseiro?</td>
+                <td>Portaria</td>
+                <td><input type="checkbox" name="obs13_sim"></td>
+                <td><input type="checkbox" name="obs13_nao"></td>
+                <td><input type="checkbox" name="obs13_na"></td>
+            </tr>
+            <tr>
+                <td>14- Veículo tipo BAÚ assoalho é de ferro? (Carregamento somente com empilhadeira)</td>
+                <td>Portaria</td>
+                <td><input type="checkbox" name="obs14_sim"></td>
+                <td><input type="checkbox" name="obs14_nao"></td>
+                <td><input type="checkbox" name="obs14_na"></td>
+            </tr>
+            <tr>
+                <td>15- A Capacidade máxima de lotação do veículo corresponde com o peso programado? Em caso de descarga - N/a</td>
+                <td>Armazém</td>
+                <td><input type="checkbox" name="obs15_sim"></td>
+                <td><input type="checkbox" name="obs15_nao"></td>
+                <td><input type="checkbox" name="obs15_na"></td>
+            </tr>
+            <tr>
+                <td>16- O caminhão está limpo e em bom estado de conservação internamente? (Assoalho sem tufo, poeira, poças de água, resíduo de alimento, e as lonas do sider sem furos ou rasgos)</td>
+                <td>Armazém</td>
+                <td><input type="checkbox" name="obs16_sim"></td>
+                <td><input type="checkbox" name="obs16_nao"></td>
+                <td><input type="checkbox" name="obs16_na"></td>
+            </tr>
+            <tr>
+                <td>17- O veículo está sem odores estranhos?</td>
+                <td>Armazém</td>
+                <td><input type="checkbox" name="obs17_sim"></td>
+                <td><input type="checkbox" name="obs17_nao"></td>
+                <td><input type="checkbox" name="obs17_na"></td>
+            </tr>
+            <tr>
+                <td>18- Há transporte de cargas mistas que possibilitem contaminações? (produtos químicos, alergênicos - castanhas, ovos leite) SOMENTE DESCARGA</td>
+                <td>Armazém</td>
+                <td><input type="checkbox" name="obs18_sim"></td>
+                <td><input type="checkbox" name="obs18_nao"></td>
+                <td><input type="checkbox" name="obs18_na"></td>
+            </tr>
+            <tr>
+                <td>19- A carga está bem paletizada e sem avarias? (sem avaria, sem cortes superficiais, sem furos significativos, sem danos visíveis) SOMENTE DESCARGA</td>
+                <td>Armazém</td>
+                <td><input type="checkbox" name="obs19_sim"></td>
+                <td><input type="checkbox" name="obs19_nao"></td>
+                <td><input type="checkbox" name="obs19_na"></td>
+            </tr>
+            <tr>
+                <td>20- Os pallets estão em bom estado de conservação, íntegros, limpos, secos, livres de infestação (brocas e cupins)? SOMENTE DESCARGA</td>
+                <td>Armazém</td>
+                <td><input type="checkbox" name="obs20_sim"></td>
+                <td><input type="checkbox" name="obs20_nao"></td>
+                <td><input type="checkbox" name="obs20_na"></td>
+            </tr>
+            <tr>
+                <td>21- O pedido de compras, nota fiscal e laudo estão de acordo com a mercadoria? SOMENTE DESCARGA</td>
+                <td>Armazém</td>
+                <td><input type="checkbox" name="obs21_sim"></td>
+                <td><input type="checkbox" name="obs21_nao"></td>
+                <td><input type="checkbox" name="obs21_na"></td>
+            </tr>
+            <tr>
+                <td>22- Materiais quando recebidos a granel (caminhões tanques, bombonas, etc...) possuem lacre ou dispositivo similar de proteção e estes estão integros? SOMENTE P/CO2</td>
+                <td>Armazém</td>
+                <td><input type="checkbox" name="obs21_sim"></td>
+                <td><input type="checkbox" name="obs21_nao"></td>
+                <td><input type="checkbox" name="obs21_na"></td>
+            </tr>
+            <tr>
+                <td>23-A planta do fornecedor do material recebido está na lista de Vendor Sites aprovados?SOMENTE DESCARGA</td>
+                <td>Armazém</td>
+                <td><input type="checkbox" name="obs21_sim"></td>
+                <td><input type="checkbox" name="obs21_nao"></td>
+                <td><input type="checkbox" name="obs21_na"></td>
+            </table>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
+                
