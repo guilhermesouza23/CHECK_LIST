@@ -9,7 +9,7 @@ body {
 img {
     width: 100%; /* Ajusta a largura da imagem ao contêiner */
     max-width: 600px; /* Largura máxima da imagem */
-    height: 151px; /* Altura fixa da imagem */
+    height: 130px; /* Altura fixa da imagem */
     display: block;
     margin: 0 auto;
 }
