@@ -70,7 +70,9 @@
 
     <!-- Novo contêiner para a tabela de observações -->
     <div class="container observation-container">
-        <table class="observation-table">
+    <h2>Observações</h2>
+    <table class="observation-table">
+        <thead>
             <tr>
                 <th>Observação</th>
                 <th>Responsável</th>
@@ -78,6 +80,8 @@
                 <th>Não</th>
                 <th>N/A</th>
             </tr>
+        </thead>
+        <tbody>
             <!-- Adicione as linhas da tabela com as observações -->
             <tr>
                 <td>01- Motorista possui algumas das alternativas de identificação: N° carga, crachá ou uniforme da Portaria</td>
@@ -239,10 +243,11 @@
                 <td><input type="checkbox" name="obs21_sim"></td>
                 <td><input type="checkbox" name="obs21_nao"></td>
                 <td><input type="checkbox" name="obs21_na"></td>
-            </table>
+           </tr>
+            </tbody>
+        </table>
     </div>
 
     <script src="script.js"></script>
 </body>
 </html>
-                
