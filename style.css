@@ -1,22 +1,29 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #add8e6;
+    background-color: #add8e6; /* Azul claro */
     margin: 0;
     padding: 0;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
 .container {
     max-width: 600px;
-    margin: 50px auto;
-    background-color: #fff;
+    margin: 0 auto;
+    background-color: #fff; /* Branco */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
-    color:  #0056b3; /* Cor azul para o título */
+    color: #007bff; /* Cor azul para o título */
     text-align: center; /* Centraliza o texto */
     margin-bottom: 20px; /* Espaçamento abaixo do título */
     font-size: 24px; /* Tamanho da fonte */
