@@ -1,15 +1,14 @@
-
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #add8e6; /* Azul claro */
+    background-color: #add8e6;
     margin: 0;
     padding: 0;
 }
 
 img {
-    width: 100%; /* Ajusta a largura da imagem ao contêiner */
-    max-width: 600px; /* Largura máxima da imagem */
-    height: 130px; /* Altura fixa da imagem */
+    width: 100%;
+    max-width: 600px;
+    height: 130px;
     display: block;
     margin: 0 auto;
 }
@@ -17,18 +16,19 @@ img {
 .container {
     max-width: 600px;
     margin: 0 auto;
-    background-color: #fff; /* Branco */
+    background-color: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
-    color: #007bff; /* Cor azul para o título */
-    text-align: center; /* Centraliza o texto */
-    margin-bottom: 20px; /* Espaçamento abaixo do título */
-    font-size: 24px; /* Tamanho da fonte */
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
 }
+
 form {
     display: flex;
     flex-direction: column;
@@ -57,4 +57,26 @@ button {
 
 button:hover {
     background-color: #0056b3;
+}
+
+/* Estilos para o novo contêiner da tabela de observações */
+.observation-container {
+    margin-top: 20px;
+}
+
+.observation-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.observation-table th, .observation-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.observation-table th {
+    background-color: #007bff;
+    color: #fff;
 }
