@@ -26,6 +26,10 @@ body {
     margin-top: 20px; /* Adicione um espaçamento entre os contêineres e o topo */
 }
 
+.observation-container {
+    height: 100%; /* Igual à altura do .container */
+}
+
 
 h2 {
     color: #007bff;
