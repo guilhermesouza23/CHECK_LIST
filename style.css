@@ -3,14 +3,10 @@ body {
     background-color: #add8e6;
     margin: 0;
     padding: 0;
-}
-
-img {
-    width: 100%;
-    max-width: 600px;
-    height: 130px;
-    display: block;
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Isso garante que a altura da tela seja pelo menos 100% da altura visível. */
 }
 
 .container {
@@ -19,12 +15,13 @@ img {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 10px; /* Adicionei uma margem para separar os contêineres. */
 }
 
 .half-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px; /* Definindo uma largura máxima para os contêineres */
 }
 
 h2 {
