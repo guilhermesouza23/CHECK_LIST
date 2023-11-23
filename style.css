@@ -8,13 +8,11 @@ body {
 
 .header-image {
     max-width: 100%;
-    overflow: hidden;
 }
 
 img {
     width: 100%;
-    height: 100%;
-    object-fit: cover; /* Cobrir todo o espaço mantendo a proporção */
+    height: auto;
     display: block;
     margin: 0 auto;
 }
@@ -34,7 +32,6 @@ h2 {
     margin-bottom: 20px; /* Espaçamento abaixo do título */
     font-size: 24px; /* Tamanho da fonte */
 }
-
 form {
     display: flex;
     flex-direction: column;
