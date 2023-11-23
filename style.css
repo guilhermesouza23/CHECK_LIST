@@ -62,6 +62,8 @@ button:hover {
 /* Estilos para o novo contêiner da tabela de observações */
 .observation-container {
     margin-top: 20px;
+    float: left;
+    width: calc(50% - 10px); /* 50% da largura, subtraindo a margem entre os contêineres */
 }
 
 .observation-table {
