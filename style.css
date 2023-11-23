@@ -15,6 +15,13 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+h2 {
+    color: #add8e6; /* Cor azul para o título */
+    text-align: center; /* Centraliza o texto */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+    font-size: 24px; /* Tamanho da fonte */
+}
+
 form {
     display: flex;
     flex-direction: column;
