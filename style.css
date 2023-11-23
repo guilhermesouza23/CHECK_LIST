@@ -5,24 +5,27 @@ body {
     padding: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
-    min-height: 100vh; /* Isso garante que a altura da tela seja pelo menos 100% da altura visível. */
+    align-items: flex-start; /* Alinhe ao topo */
+    min-height: 100vh;
 }
 
-.container {
+.container,
+.observation-container {
     max-width: 600px;
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 0 10px; /* Adicionei uma margem para separar os contêineres. */
+    margin: 0 10px;
 }
 
 .half-container {
     display: flex;
-    justify-content: space-between;
-    max-width: 1200px; /* Definindo uma largura máxima para os contêineres */
+    justify-content: center;
+    max-width: 1200px;
+    margin-top: 20px; /* Adicione um espaçamento entre os contêineres e o topo */
 }
+
 
 h2 {
     color: #007bff;
