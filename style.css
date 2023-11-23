@@ -1,6 +1,7 @@
+
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #add8e6; /* Azul claro */
+    background-color: #add8e6;
     margin: 0;
     padding: 0;
 }
@@ -8,26 +9,15 @@ body {
 .container {
     max-width: 600px;
     margin: 50px auto;
-    background-color: #fff; /* Branco */
+    background-color: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
-    color: #333;
-    margin-bottom: 20px; /* Adicionado margin-bottom para o título */
-}
-
-p {
-    color: #555;
-    margin-bottom: 20px;
-}
-
-.header-options {
+form {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px; /* Adicionado margin-bottom para o bloco de opções de cabeçalho */
+    flex-direction: column;
 }
 
 label {
