@@ -19,19 +19,6 @@ body {
     align-items: flex-start;
     min-height: 100vh;
 }
-
-.header-image {
-    width: 100%;
-    max-width: 600px;
-    text-align: center;
-}
-
-.header-image img {
-    height: 130px;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 8px;
-}
 .half-container {
     display: flex;
     justify-content: center;
