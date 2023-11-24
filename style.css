@@ -10,28 +10,27 @@ body {
 }
 
 .container {
-    /* Seus estilos existentes para o contêiner */
     font-family: 'Arial', sans-serif;
     background-color: #add8e6;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Alinhe ao topo */
+    align-items: flex-start;
     min-height: 100vh;
 }
 
 .header-image {
-    width: 100%; /* A largura da imagem é igual à largura do contêiner */
-    max-width: 600px; /* ou ajuste conforme necessário */
-    text-align: center; /* Centraliza a imagem horizontalmente */
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
 }
 
 .header-image img {
-    height: 130px; /* Altura desejada para a imagem */
-    width: 100%; /* Ajusta automaticamente a largura para manter a proporção */
-    object-fit: cover; /* Garante que a imagem cubra completamente o contêiner */
-    border-radius: 8px; /* Se desejar bordas arredondadas na imagem */
+    height: 130px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
 }
 .half-container {
     display: flex;
