@@ -50,7 +50,28 @@ h2 {
 form {
     display: flex;
     flex-direction: column;
+    height: 200px; /* Ajuste a altura conforme desejado */
 }
+
+.observation-container {
+    max-width: 500px; /* Reduz a largura para 500px */
+    background-color: #fff;
+    padding: 15px; /* Reduz o preenchimento para 15px */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 10px;
+    height: 200px; /* Ajusta a altura para 200px ou outro valor desejado */
+    overflow-y: auto; /* Adiciona rolagem vertical se o conteúdo ultrapassar a altura */
+}
+
+.observation-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    height: 100px; /* Ajuste a altura conforme desejado */
+    overflow-y: auto; /* Adiciona rolagem vertical se o conteúdo ultrapassar a altura */
+}
+
 
 label {
     margin-top: 10px;
