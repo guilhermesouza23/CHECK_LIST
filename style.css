@@ -9,8 +9,8 @@ body {
     min-height: 100vh;
 }
 
-.container
- {
+.container,
+.observation-container {
     max-width: 600px;
     background-color: #fff;
     padding: 20px;
@@ -20,23 +20,14 @@ body {
 }
 
 .half-container {
-    max-width: 600px;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
     margin-top: 20px; /* Adicione um espaçamento entre os contêineres e o topo */
 }
 
 .observation-container {
-    .observation-container {
-    max-width: 500px; /* Reduz a largura para 500px */
-    background-color: #fff;
-    padding: 15px; /* Reduz o preenchimento para 15px */
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 0 10px;
+    height: 100%; /* Igual à altura do .container */
 }
 
 
@@ -79,14 +70,10 @@ button:hover {
 
 /* Estilos para o novo contêiner da tabela de observações */
 .observation-container {
-    .observation-container {
-    max-width: 500px; /* Reduz a largura para 500px */
     background-color: #fff;
-    padding: 15px; /* Reduz o preenchimento para 15px */
+    padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 0 10px;
-    height: 300px; /* Ajusta a altura para 300px ou outro valor 
 }
 
 .observation-table {
