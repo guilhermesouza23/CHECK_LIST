@@ -9,16 +9,30 @@ body {
     min-height: 100vh;
 }
 
-.container,
-.observation-container {
-    max-width: 600px;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 0 10px;
+.container {
+    /* Seus estilos existentes para o contêiner */
+    font-family: 'Arial', sans-serif;
+    background-color: #add8e6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinhe ao topo */
+    min-height: 100vh;
 }
 
+.header-image {
+    width: 100%; /* A largura da imagem é igual à largura do contêiner */
+    max-width: 600px; /* ou ajuste conforme necessário */
+    text-align: center; /* Centraliza a imagem horizontalmente */
+}
+
+.header-image img {
+    height: 130px; /* Altura desejada para a imagem */
+    width: 100%; /* Ajusta automaticamente a largura para manter a proporção */
+    object-fit: cover; /* Garante que a imagem cubra completamente o contêiner */
+    border-radius: 8px; /* Se desejar bordas arredondadas na imagem */
+}
 .half-container {
     display: flex;
     justify-content: center;
@@ -38,12 +52,7 @@ h2 {
     font-size: 24px;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
+
 
 form {
     display: flex;
